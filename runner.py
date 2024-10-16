@@ -2,7 +2,7 @@
 # import json
 import requests
 import os
-
+from lgtm import core
 
 if __name__=="__main__":
     # query = parse.urlencode({'q': 'python'})
@@ -26,3 +26,4 @@ if __name__=="__main__":
     print(res.json().keys())
     print(res.json()['form'])
 
+    core.cli()
